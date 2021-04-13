@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{19D6A1F7-D884-FB34-1E9B-3C0F7AE1C03A}</ProjectGuid>
+    <ProjectGuid>{90E47AFE-6AEF-02DE-840A-D768385384E6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Standard Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\CarSelfRighting.cs" />
@@ -69,7 +70,10 @@
     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
     <Compile Include="Assets\Standard Assets\Utility\PlatformSpecificContent.cs" />
     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+    <Compile Include="Assets\Standard Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\ProtectCameraFromWallClip.cs" />
+    <Compile Include="Assets\Standard Assets\SampleScenes\Scripts\LevelReset.cs" />
+    <Compile Include="Assets\Standard Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\HandHeldCam.cs" />
@@ -98,6 +102,7 @@
     <Compile Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\SpecularLighting.cs" />
+    <Compile Include="Assets\Standard Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\AutoCam.cs" />
     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\CarAIControl.cs" />
@@ -108,6 +113,7 @@
     <Compile Include="Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneAudio.cs" />
     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\FireLight.cs" />
     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
+    <Compile Include="Assets\Standard Assets\SampleScenes\Scripts\CameraSwitch.cs" />
     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
     <Compile Include="Assets\Standard Assets\Utility\CurveControlledBob.cs" />
@@ -117,9 +123,11 @@
     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
     <Compile Include="Assets\Standard Assets\Utility\ForcedReset.cs" />
     <Compile Include="Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
+    <Compile Include="Assets\Standard Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\Standard Assets\Vehicles\Aircraft\Scripts\LandingGear.cs" />
     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
     <Compile Include="Assets\Standard Assets\Utility\ObjectResetter.cs" />
+    <Compile Include="Assets\Standard Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
     <Compile Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
@@ -160,6 +168,7 @@
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+     <None Include="Assets\Standard Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
      <None Include="Assets\Standard Assets\Vehicles\Car\CarGuidelines.txt" />
      <None Include="Assets\Standard Assets\Vehicles\Aircraft\AircraftGuidelines.txt" />
      <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
@@ -776,6 +785,9 @@
     <Reference Include="Unity.Subsystem.Registration">
       <HintPath>Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -793,6 +805,9 @@
     </Reference>
     <Reference Include="Unity.XR.WindowsMixedReality.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.XR.WindowsMixedReality.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
@@ -815,20 +830,14 @@
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Antilatency.Integration.csproj">
-      <Project>{40656E95-748C-7024-6439-E324EFD058D2}</Project>
+      <Project>{8EB4C501-ABC3-C4CA-F2C2-04F6847F2B01}</Project>
       <Name>Antilatency.Integration</Name>
     </ProjectReference>
     <ProjectReference Include="Antilatency.Integration.Editor.csproj">
-      <Project>{08E25B66-ECF5-63AD-55C8-6DC2DE3DE65A}</Project>
+      <Project>{53E216D3-8D13-35BB-0F83-8DAFB3DA9CF4}</Project>
       <Name>Antilatency.Integration.Editor</Name>
     </ProjectReference>
   </ItemGroup>

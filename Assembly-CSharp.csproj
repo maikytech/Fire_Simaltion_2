@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{65BDDD23-E084-6B31-6B88-49FBAEC99C36}</ProjectGuid>
+    <ProjectGuid>{3D7BAED2-15AF-DC01-FC78-DC16B36224B0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,21 +56,23 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PuttingOutFire.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
-    <Compile Include="Assets\Didimo\Scripts\Utils\Coroutines\CoroutineManager.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
-    <Compile Include="Assets\Scripts\TestVS.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
-    <Compile Include="Assets\Scripts\GameController.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
+    <Compile Include="Assets\Project\Scripts\PuttingOutFire.cs" />
+    <Compile Include="Assets\Third_Assets\Didimo\Scripts\Utils\Coroutines\CoroutineManager.cs" />
+    <Compile Include="Assets\Project\Scripts\TestVS.cs" />
+    <Compile Include="Assets\Project\Scripts\GameController.cs" />
+    <Compile Include="Assets\Third_Assets\PyroParticles\Prefab\Script\FireLightScript.cs" />
+    <Compile Include="Assets\Third_Assets\PyroParticles\Demo\DemoScriptEditor.cs" />
+    <Compile Include="Assets\Third_Assets\PyroParticles\Prefab\Script\MeteorSwarmScript.cs" />
+    <Compile Include="Assets\Third_Assets\PyroParticles\Prefab\Script\FireProjectileScript.cs" />
+    <Compile Include="Assets\Third_Assets\PyroParticles\Prefab\Script\FireConstantBaseScript.cs" />
+    <Compile Include="Assets\Third_Assets\PyroParticles\Prefab\Script\SingleLineAttribute.cs" />
+    <Compile Include="Assets\Third_Assets\PyroParticles\Prefab\Script\FireBaseScript.cs" />
+    <Compile Include="Assets\Third_Assets\PyroParticles\Prefab\Script\FireCollisionForwardScript.cs" />
+    <Compile Include="Assets\Third_Assets\PyroParticles\Demo\DemoScript.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+     <None Include="Assets\Third_Assets\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
+     <None Include="Assets\Third_Assets\PyroParticles\Readme.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.2f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -662,6 +664,9 @@
     <Reference Include="Unity.Subsystem.Registration">
       <HintPath>Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -679,6 +684,9 @@
     </Reference>
     <Reference Include="Unity.XR.WindowsMixedReality.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.XR.WindowsMixedReality.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
@@ -701,24 +709,18 @@
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{19D6A1F7-D884-FB34-1E9B-3C0F7AE1C03A}</Project>
+      <Project>{90E47AFE-6AEF-02DE-840A-D768385384E6}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Antilatency.Integration.csproj">
-      <Project>{40656E95-748C-7024-6439-E324EFD058D2}</Project>
+      <Project>{8EB4C501-ABC3-C4CA-F2C2-04F6847F2B01}</Project>
       <Name>Antilatency.Integration</Name>
     </ProjectReference>
     <ProjectReference Include="Antilatency.Integration.Editor.csproj">
-      <Project>{08E25B66-ECF5-63AD-55C8-6DC2DE3DE65A}</Project>
+      <Project>{53E216D3-8D13-35BB-0F83-8DAFB3DA9CF4}</Project>
       <Name>Antilatency.Integration.Editor</Name>
     </ProjectReference>
   </ItemGroup>

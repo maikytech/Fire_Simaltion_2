@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7FC6C054-EDAC-5915-4D1A-EB044DDFCA1B}</ProjectGuid>
+    <ProjectGuid>{1AD1DCF8-3E57-7B89-AEB0-324B41A91CA1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -56,10 +56,11 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Didimo\Editor\Scripts\Coroutines\EditorYieldInstruction.cs" />
-    <Compile Include="Assets\Didimo\Editor\Scripts\Coroutines\EditorCoroutineManager.cs" />
-    <Compile Include="Assets\Didimo\Editor\Scripts\Coroutines\EditorWaitForSeconds.cs" />
-    <Compile Include="Assets\Didimo\Editor\Scripts\InstallDidimoWindow.cs" />
+    <Compile Include="Assets\Third_Assets\Didimo\Editor\Scripts\Coroutines\EditorYieldInstruction.cs" />
+    <Compile Include="Assets\Third_Assets\Didimo\Editor\Scripts\Coroutines\EditorCoroutineManager.cs" />
+    <Compile Include="Assets\Third_Assets\Didimo\Editor\Scripts\Coroutines\EditorWaitForSeconds.cs" />
+    <Compile Include="Assets\Third_Assets\Didimo\Editor\Scripts\InstallDidimoWindow.cs" />
+    <Compile Include="Assets\Third_Assets\PyroParticles\Prefab\Editor\PyroParticlesEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -689,6 +690,9 @@
     <Reference Include="Unity.Subsystem.Registration">
       <HintPath>Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -706,6 +710,9 @@
     </Reference>
     <Reference Include="Unity.XR.WindowsMixedReality.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.XR.WindowsMixedReality.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
@@ -728,32 +735,26 @@
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{19D6A1F7-D884-FB34-1E9B-3C0F7AE1C03A}</Project>
+      <Project>{90E47AFE-6AEF-02DE-840A-D768385384E6}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{65BDDD23-E084-6B31-6B88-49FBAEC99C36}</Project>
+      <Project>{3D7BAED2-15AF-DC01-FC78-DC16B36224B0}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
-      <Project>{4FABC10B-6841-A7C6-8CF9-3665CB6717DE}</Project>
+      <Project>{BE3EFB72-ADDE-5DFB-496F-861DDC2BBCA2}</Project>
       <Name>Assembly-CSharp-Editor-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Antilatency.Integration.csproj">
-      <Project>{40656E95-748C-7024-6439-E324EFD058D2}</Project>
+      <Project>{8EB4C501-ABC3-C4CA-F2C2-04F6847F2B01}</Project>
       <Name>Antilatency.Integration</Name>
     </ProjectReference>
     <ProjectReference Include="Antilatency.Integration.Editor.csproj">
-      <Project>{08E25B66-ECF5-63AD-55C8-6DC2DE3DE65A}</Project>
+      <Project>{53E216D3-8D13-35BB-0F83-8DAFB3DA9CF4}</Project>
       <Name>Antilatency.Integration.Editor</Name>
     </ProjectReference>
   </ItemGroup>

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{08E25B66-ECF5-63AD-55C8-6DC2DE3DE65A}</ProjectGuid>
+    <ProjectGuid>{53E216D3-8D13-35BB-0F83-8DAFB3DA9CF4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Antilatency.Integration.Editor</AssemblyName>
@@ -676,7 +676,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Antilatency.Integration.csproj">
-      <Project>{40656E95-748C-7024-6439-E324EFD058D2}</Project>
+      <Project>{8EB4C501-ABC3-C4CA-F2C2-04F6847F2B01}</Project>
       <Name>Antilatency.Integration</Name>
     </ProjectReference>
   </ItemGroup>
