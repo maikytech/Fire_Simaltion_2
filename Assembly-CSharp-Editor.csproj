@@ -57,10 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Third_Assets\Didimo\Editor\Scripts\Coroutines\EditorYieldInstruction.cs" />
+    <Compile Include="Assets\Third_Assets\PyroParticles\Prefab\Editor\PyroParticlesEditor.cs" />
     <Compile Include="Assets\Third_Assets\Didimo\Editor\Scripts\Coroutines\EditorCoroutineManager.cs" />
     <Compile Include="Assets\Third_Assets\Didimo\Editor\Scripts\Coroutines\EditorWaitForSeconds.cs" />
     <Compile Include="Assets\Third_Assets\Didimo\Editor\Scripts\InstallDidimoWindow.cs" />
-    <Compile Include="Assets\Third_Assets\PyroParticles\Prefab\Editor\PyroParticlesEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

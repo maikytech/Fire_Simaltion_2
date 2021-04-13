@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Antilatency/Integration/Samples/Ceiling_All_Simulation.unity
+- path: Assets/Antilatency/Integration/Samples/Floor_All_Simulation.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
